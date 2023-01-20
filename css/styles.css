@@ -9,22 +9,33 @@ body {
   color: var(--tittle-color);
   font-family: roboto, sans-serif;
 }
-header {
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.header {
   height: 80px;
-  width: 1600px;
-  margin-left: 0px;
-  margin-top: 0px;
   border-radius: 0px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 li {
   list-style-type: none;
 }
 .logo {
-  position: absolute;
   font-family: raleway, sans-serif;
   color: var(--brand-color);
   text-decoration: none;
@@ -33,11 +44,7 @@ li {
   text-align: left;
   font-weight: bold;
   font-size: 26px;
-  height: 31px;
-  width: 145px;
-  margin-left: 215px;
-  margin-top: 24px;
-  border-radius: nullpx;
+  margin-right: 93px;
 }
 .menu {
   text-decoration: none;
@@ -46,18 +53,11 @@ li {
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--tittle-color);
-  padding-right: 62px;
 }
 .box1 {
-  position: absolute;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  height: 16px;
-  width: 281px;
-  margin-left: 453px;
-  margin-top: 32px;
-  border-radius: nullpx;
+  gap: 50px;
 }
 .menu:active {
   color: var(--brand-color);
@@ -72,6 +72,7 @@ li {
   font-weight: medium;
   line-height: 1.143;
   color: var(--letter-color);
+  gap: 50px;
 }
 .contact:visited {
   color: var(--letter-color);
@@ -84,24 +85,7 @@ li {
 }
 .box2 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 32px;
-  margin-left: 344px;
-}
-.one {
-  height: 16px;
-  width: 135px;
-  margin-top: 32px;
-  margin-right: 50px;
-  border-radius: nullpx;
-}
-.two {
-  height: 16px;
-  width: 118px;
-  margin-right: 219px;
-  margin-top: 32px;
-  border-radius: nullpx;
+  gap: 50px;
 }
 .tittle {
   color: white;
@@ -110,23 +94,21 @@ li {
   letter-spacing: 0.06em;
   font-weight: 900;
   line-height: 1.364;
-  width: 1600px;
   height: 600px;
   margin-left: -4px;
-  margin-top: 0px;
+  margin-top: 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 h1 {
-  position: absolute;
-
-  width: 696px;
-  height: 120px;
-  margin: 200px 452px 280px 452px;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  /* or 136% */
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -140,24 +122,22 @@ h1 {
   border: none;
   border-radius: 4px;
   font-family: roboto, sans-serif;
+  padding: 6px 17px;
 }
 .init {
   background-color: var(--brand-color);
   color: white;
-  width: 261px;
-  height: 50px;
-  margin-top: 350px;
   justify-content: center;
+  padding: 10px 32px;
 }
 .button:hover {
   color: white;
   background-color: var(--brand-color);
 }
-.description {
-  width: 1170px;
-  height: 122px;
-  margin-left: 215px;
+.one {
   margin-top: 95px;
+}
+.description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -176,50 +156,41 @@ h1 {
   line-height: 1.714;
 }
 .description-work {
-  width: 1173.16px;
-  height: 425px;
-  margin-top: 95px;
-  margin-left: 215px;
+  padding-top: 94px;
 }
 .description-work > h2 {
   text-align: center;
   letter-spacing: 0.03em;
   font-weight: bold;
   line-height: 1.167;
-  width: 371.15px;
-  height: 46.24px;
-  margin-left: 404.43px;
 }
 .box3 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: flex-end;
+  justify-content: center;
+  gap: 23px;
+}
+.box3 > li {
+  padding-top: 55px;
 }
 .description-company {
   background-color: var(--company-color);
-  width: 1600px;
-  height: 648px;
   margin-top: 94px;
+  align-items: center;
 }
 .description-company > h2 {
   text-align: center;
   letter-spacing: 0.03em;
   font-weight: bold;
   line-height: 1.167;
-  width: 263px;
-  height: 42px;
-  margin-left: 669px;
   padding-top: 94px;
 }
 .workers {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 1177px;
-  height: 368px;
-  margin-left: 208px;
+  justify-content: center;
   padding-top: 50px;
+  padding-bottom: 94px;
+  gap: 23px;
 }
 .workers > li > h3 {
   text-align: center;
@@ -235,14 +206,7 @@ h1 {
   line-height: 1.188;
 }
 .workers > li {
-  width: 270px;
-  height: 368px;
-  left: 515px;
-  top: 1696px;
-
   background: #ffffff;
-  /* material shadow v1 */
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -252,17 +216,8 @@ h1 {
   text-align: left;
   display: flex;
   flex-direction: column;
-  width: 1600px;
-  height: 252px;
-}
-.final {
-  margin-top: 60px;
-  margin-left: 215px;
-}
-.box4 {
-  height: 92px;
-  margin-top: 100px;
-  margin-left: 215px;
+  justify-content: space-around;
+  padding-left: 215px;
 }
 .info {
   color: rgba(255, 255, 255, 0.6);
@@ -294,8 +249,6 @@ h1 {
 }
 .list > li {
   cursor: pointer;
-  width: 370px;
-  height: 404px;
   border: 1px solid #eeeeee;
 }
 .active {
@@ -305,25 +258,18 @@ h1 {
   color: white;
   background-color: var(--brand-color);
 }
-.content {
-  width: 1170px;
-  height: 1360px;
-  margin-left: 215px;
-  margin-top: 106px;
-  margin-bottom: 34px;
-}
 .box5 {
-  width: 611px;
-  height: 54px;
-  margin-left: 280px;
-  margin-top: 0px;
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 106px;
 }
 .list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  align-items: baseline;
+  margin-top: 50px;
+  gap: 20px;
+  margin-bottom: 82px;
 }
